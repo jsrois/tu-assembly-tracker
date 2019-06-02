@@ -1,0 +1,57 @@
+$bg-color: yellow;
+$border-color: blue;
+
+.app {
+  font-family: sans-serif;
+}
+.headerBar {
+  font-size: 26px;
+  text-align: center;
+  height: 40px;
+}
+.minutesPanel__reader {
+  display: flex;
+  .minutesList {
+    flex-basis: 20%;
+    font-size: 18px;
+    margin: 0 10px;
+    &__item {
+      padding: 6px;
+      margin: 2px;
+      border: solid grey 1px;
+      border-radius: .3em;
+      &:hover {
+        background: lightblue;
+      }
+    }
+
+    
+  }
+  .detailedView {
+    flex-basis: 80%;
+    padding: 6px;
+    border: 1px solid grey;
+    background: beige;
+    &__editButton {
+      text-align: right;
+      font: bold;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+.editorView{
+  font:italic;
+  &__window {
+    background: beige;
+    padding: 20px;
+  }
+  &__closeButton {
+    text-align: right;
+    &:hover {
+      color: blue;
+    }
+  }
+}
